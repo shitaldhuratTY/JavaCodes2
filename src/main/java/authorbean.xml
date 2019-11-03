@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean id="write" class="com.tyss.usttyspringcore.beans.Pen" ></bean>
+    
+    <bean id="pencil" class="com.tyss.usttyspringcore.beans.Pencil"></bean>
+    
+    <bean id="author" class="com.tyss.usttyspringcore.beans.Author" autowire="byName"  >
+    <property name="name" value="Shital"></property>
+    	
+    </bean>
+
+    
+    </beans>
